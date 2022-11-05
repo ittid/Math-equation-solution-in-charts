@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quadratic Equation calculator JS</title>
+    <link rel="stylesheet" href="style.min.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>ax+b Equation solution & charts</h1>
+      <div class="wrap">
+        <span id="prev_a">a</span>x
+        <strong>+</strong>
+        <span id="prev_b">b</span> = 0
+      </div>
+      <label for="a">
+        <strong>a => value</strong>
+        <input
+          data-equation
+          type="number"
+          id="a"
+          placeholder="Enter the 'a' value"
+          autocomplete="off"
+        />
+      </label>
+      <label for="b">
+        <strong>b => value</strong>
+        <input
+          data-equation
+          type="number"
+          id="b"
+          placeholder="Enter the 'b' value"
+          autocomplete="off"
+        />
+      </label>
+      <button data-calc>calc</button>
+      <h2>solution is : <span id="solution"></span></h2>
+      <section id="section">
+        <div class="fx">
+          f(x)=
+          <div>
+            <span id="prev_a_fx">a</span>x + <span id="prev_b_fx">b</span>
+          </div>
+          <p>
+            after that: we give x = 0 and x = 1 and we draw the graph of f(x)
+          </p>
+        </div>
+        <canvas id="graph"></canvas>
+      </section>
+    </main>
+  </body>
+</html>
